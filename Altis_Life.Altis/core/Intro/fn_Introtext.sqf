@@ -9,11 +9,11 @@ _onScreenTime = 5;
 sleep 2; //Wait in seconds before the credits start after player is in-game
 
 _role1 = "Welcome to Altis Life";
-_role1names = ["A Framework by Tonic"];
-_role2 = "Modified By the TGN Development Team";
-_role2names = ["Please read up on the rules on our forums"];
-_role3 = "Visit Our Forums:";
-_role3names = ["TBA"];
+_role1names = ["A Framework by Tonic, Modified by the TGS Development Team"];
+_role2 = "Development Team";
+_role2names = ["Larry, Tempo, Stevie, Jared"];
+_role3 = "Please Visit Our Forums:";
+_role3names = ["TheGamersSociety.net"];
 _role4 = "Join Our Teamspeak at";
 _role4names = ["thegamerssociety.streamlinegames.com"];
 _role5 = "Please enjoy your stay";
@@ -22,7 +22,7 @@ _role5names = [profileName];
 sleep 2;
 _memberFunction = _x select 0;
 _memberNames = _x select 1;
-_finalText = format ["<t size='1' color='#c500ff' align='right'>%1<br /></t>", _memberFunction];
+_finalText = format ["<t size='1' color='#a5216c' align='right'>%1<br /></t>", _memberFunction];
 _finalText = _finalText + "<t size='0.70' color='#ffffff' align='right'>";
 {_finalText = _finalText + format ["%1<br />", _x]} forEach _memberNames;
 _finalText = _finalText + "</t>";
