@@ -26,10 +26,10 @@ _kassa = 2500000 + round(random 900000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
-if(_chance >= 50) then {[1,format["<t color='#e32828' size='2'>Kavala Bank Robbery", _shop]] remoteExec ["life_fnc_broadcast",civilian]; };
+if(_chance >= 0) then {[1,format["<t color='#e32828' size='2'>Kavala Bank Robbery", _shop]] remoteExec ["life_fnc_broadcast",civilian]; };
 [_shop, "robberyalarm",250] RemoteExec [ "life_fnc_say3D",0];
 
-
+//change civillian to west when server goes live
 _cops = (west countSide playableUnits);
 if(_cops < -1) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob the bank!";};
 disableSerialization;
