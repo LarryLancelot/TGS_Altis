@@ -13,21 +13,21 @@ _action = [_this,2] call BIS_fnc_param;//Action name
 if(side _robber != civilian) exitWith { hint "WHAT DO YOU THINK YOU'RE DOING!" };
 if(_robber distance _shop > 5) exitWith { hint "You need to be within 5m of the cashier to rob him!" };
 
-if !(_kassa) then { _kassa = 1000; };
-if (_rip) exitWith { hint "Robbery already in progress!" };
+//if !(_kassa) then { _kassa = 1000; };
+//if (_rip) exitWith { hint "Robbery already in progress!" };
 if (vehicle player != _robber) exitWith { hint "Get out of your vehicle!" };
 
-if !(alive _robber) exitWith {};
+if (currentWeapon _robber == "" && currentWeapon player != "Binocular" && currentWeapon player != "Rangefinder") exitWith { hint "HaHa, you do not threaten me! Get out of here you hobo!" };
 if (currentWeapon _robber == "") exitWith { hint "HaHa, you do not threaten me! Get out of here you hobo!" };
-if (_kassa == 0) exitWith { hint "There is no cash in the register!" };
+//if (_kassa == 0) exitWith { hint "There is no cash in the register!" };
 
 _rip = true;
 _kassa = 2500000 + round(random 900000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
-{hint "The cashier hit the silent alarm, police have been alerted!"; [[1,format["Someone dun rob der bank", mapGridPosition _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;};
-[[_shop, "robberyalarm",250],"life_fnc_playSound",true,false] spawn life_fnc_MP;
+if(_chance >= 50) then {[1,format["<t color='#e32828' size='2'>Kavala Bank Robbery", _shop]] remoteExec ["life_fnc_broadcast",civilian]; };
+[_shop, "robberyalarm",250] RemoteExec [ "life_fnc_say3D",0];
 
 
 _cops = (west countSide playableUnits);
@@ -50,10 +50,10 @@ _cP = _cP + 0.01;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
 _Pos = position player; // by ehno: get player pos
-				                _marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
-				                "Marker200" setMarkerColor "ColorRed";
-				                "Marker200" setMarkerText "!!KEEP CLEAR Bank is being robbed. KEEP CLEAR!!";
-				                "Marker200" setMarkerType "mil_warning";
+                                _marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
+                                "Marker200" setMarkerColor "ColorRed";
+                                "Marker200" setMarkerText "!!KEEP CLEAR Bank is being robbed. KEEP CLEAR!!";
+                                "Marker200" setMarkerType "mil_warning";
 if(_cP >= 1) exitWith {};
 if(_robber distance _shop > 10.5) exitWith { };
 if!(alive _robber) exitWith {};
