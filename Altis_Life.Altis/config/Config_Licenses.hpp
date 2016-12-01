@@ -179,6 +179,13 @@ class Licenses {
         side = "cop";
     };
 
+    class ccar {
+        variable = "ccar";
+        displayName = "STR_License_ccar";
+        price = 1000;
+        illegal = false;
+        side = "cop";
+    };
     //Medic Licenses
     class mAir {
         variable = "mAir";

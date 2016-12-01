@@ -151,8 +151,8 @@ class Clothing {
         vests[] = {
             { "NONE", "Remove Vest", 0, "" },
             { "V_Rangemaster_belt", "", 800, "" },
-            { "V_TacVest_blk_POLICE", "", 1000, "call life_coplevel >= 1" },
-            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" }
+            { "V_TacVest_blk_POLICE", "", 1000, "call life_coplevel >= 2" },
+            { "V_PlateCarrier1_blk", "", 1500, "call life_coplevel >= 4" }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, "" },

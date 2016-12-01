@@ -117,9 +117,9 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
-            { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
-            { "B_MRAP_01_F", "call life_coplevel  >= 2" },
-            { "B_MRAP_01_hmg_F", "call life_coplevel >= 3" }
+            { "C_Hatchback_01_sport_F", "call life_coplevel >= 2" },
+            { "B_MRAP_01_F", "call life_coplevel  >= 3" },
+            { "B_MRAP_01_hmg_F", "call life_coplevel >= 4" }
         };
     };
 
@@ -325,7 +325,7 @@ class LifeCfgVehicles {
 
     class C_Offroad_01_F {
         vItemSpace = 65;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {license_cop_ccar}";
         price = 12500;
         textures[] = {
             { "Red", "civ", {
@@ -382,7 +382,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Hatchback_01_sport_F {
         vItemSpace = 45;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {license_cop_ccar}";
         price = 40000;
         textures[] = {
             { "Red", "civ", {
@@ -515,7 +515,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_SUV_01_F {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {license_cop_ccar}";
         price = 30000;
         textures[] = {
             { "Dark Red", "civ", {
@@ -670,7 +670,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		conditions = "";
 		price = 1800000;
 	};
-	
+
 	class B_SDV_01_F {
         vItemSpace = 50;
         conditions = "license_civ_boat || {license_cop_cg}";
