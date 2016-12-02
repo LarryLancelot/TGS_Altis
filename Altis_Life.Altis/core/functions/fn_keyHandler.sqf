@@ -66,16 +66,14 @@ switch (_code) do {
         };
     };
 
-    //Surrender (Shift + B)
-    case 48: {
-        if (_shift) then {
+    //Surrender (Tab)
+    case 15: {
             if (player getVariable ["playerSurrender",false]) then {
                 player setVariable ["playerSurrender",false,true];
             } else {
                 [] spawn life_fnc_surrender;
             };
             _handled = true;
-        };
     };
 
     //Map Key
@@ -362,37 +360,49 @@ switch (_code) do {
     };
 	case 207:
     {
-	if(_shift) then {
 		switch (player getVariable["Earplugs",0]) do {
 			case 0: {hintSilent "Ear Plugs 90%"; 1 fadeSound 0.1; player setVariable ["Earplugs", 10]; };
 			case 10: {hintSilent "Ear Plugs 60%"; 1 fadeSound 0.4; player setVariable ["Earplugs", 40]; };
 			case 40: {hintSilent "Ear Plugs 30%"; 1 fadeSound 0.7; player setVariable ["Earplugs", 70]; };
 			case 70: {hintSilent "Ear Plugs Removed"; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
-		    };
 	   };
    };
 };
 
-	case 38: //Shift-L = Gyrophare / L= Radar  
-    {  
-        _veh = vehicle player;  
-        if (_shift && !_alt && !_ctrlKey) then  
-        {  
-            if(playerSide in [west,independent] && _veh != player && ((driver _veh) == player)) then  
-            {  
-                if(!isNil {_veh getVariable "lights"}) then  
-                {  
-                    if(playerSide == west) then  
-                    {  
-                        [_veh] call life_fnc_sirenLights;  
-                    } else {  
-                        [_veh] call life_fnc_medicSirenLights;  
-                    };  
-                };  
-            };  
-            _handled = true;  
-        };  
-        if (!_alt && !_ctrlKey && playerSide == west) then    {        [] call life_fnc_radar;    };  
-    }; 
-
+	case 38: //Shift-L = Gyrophare / L= Radar
+    {
+        _veh = vehicle player;
+        if (_shift && !_alt && !_ctrlKey) then
+        {
+            if(playerSide in [west,independent] && _veh != player && ((driver _veh) == player)) then
+            {
+                if(!isNil {_veh getVariable "lights"}) then
+                {
+                    if(playerSide == west) then
+                    {
+                        [_veh] call life_fnc_sirenLights;
+                    } else {
+                        [_veh] call life_fnc_medicSirenLights;
+                    };
+                };
+            };
+            _handled = true;
+        };
+        if (!_alt && !_ctrlKey && playerSide == west) then    {        [] call life_fnc_radar;    };
+    };
+   case 48: { //The number, 48, is the key that has to be pressed in order to zip tie someone currently "b"
+    if(_shift) then {_handled = true;}; //This makes it so they have to hold shift + key(48) to work.
+        if(playerSide in [west,independent]) exitWith {};//Makes it so police and EMS cant zip tie people
+        if !(license_civ_rebel) exitWith { hintSilent "You need a rebel training!"; };//Add required license's. Remove the whole line if you dont want any checks
+        if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+        {
+            if([false,"zipties",1] call life_fnc_handleInv) then//Removes the zipties from the inventory
+            {
+                [] call life_fnc_RestrainAction;
+                hintSilent "You have cuffed him! ";
+            } else {
+                hintSilent "You don't have zipties";
+            };
+        };
+    };
 _handled;

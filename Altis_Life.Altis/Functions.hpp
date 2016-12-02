@@ -24,7 +24,7 @@ class Life_Client_Core {
         class survival {};
         class welcomeNotification {};
 	};
-	 
+
 	 class DynMarket {
         file = "core\DynMarket";
         class bought {};
@@ -105,6 +105,7 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
+        class civInteractionMenu {};
     };
 
     class Config {
@@ -220,7 +221,7 @@ class Life_Client_Core {
         class teleport {};
         class whereAmI {};
 		class robbank {};
-		class autoMessages {}; // Message Auto  
+		class autoMessages {}; // Message Auto
 	};
 
     class Gangs {

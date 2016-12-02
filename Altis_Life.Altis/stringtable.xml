@@ -1897,25 +1897,9 @@
     <Package name="Vehicle_Service">
         <Key ID="STR_Service_Chopper_NoAir">
             <Original>There isn't a chopper on the helipad!</Original>
-            <Czech>Není vrtulník na přistávací plocha pro vrtulník!</Czech>
-            <Spanish>No hay un helicóptero en el Helipad.</Spanish>
-            <Russian></Russian>
-            <German>Es ist kein Helikopter auf dem Landeplatz </German>
-            <French>Il n'y a pas d'hélicoptère sur l'héliport</French>
-            <Italian>Non c'è alcun elicottero sulla piazzola d'atterraggio</Italian>
-            <Portuguese>Não existe uma aeronave no heliponto!</Portuguese>
-            <Polish>W pobliżu nie ma helikoptera!</Polish>
         </Key>
         <Key ID="STR_Serive_Chopper_NotEnough">
             <Original>You need $1,000 to service your chopper</Original>
-            <Czech>Musíte $ 1,000 servisních kontrol vrtulník</Czech>
-            <Spanish>Necesitas $1,000 para reparar el helicóptero.</Spanish>
-            <Russian></Russian>
-            <German>Du benötigst $1,000, um deinen Helikopter zu warten</German>
-            <French>Vous devez $1000 pour l'entretien de votre hélicoptère</French>
-            <Italian>Necessiti di $1.000 per fare manutenzione al tuo elicottero</Italian>
-            <Portuguese>Você precisa de R$1.000 para reparar a sua aeronave</Portuguese>
-            <Polish>Potrzebujesz $1000 aby serwisować helikopter</Polish>
         </Key>
         <Key ID="STR_Service_Chopper_Servicing">
             <Original>Servicing Chopper [%1]...</Original>
@@ -2680,37 +2664,16 @@
         </Key>
         <Key ID="STR_Item_CocaineU">
             <Original>Coca Leaf</Original>
-            <Czech>Coca Leaf</Czech>
-            <Spanish>Hoja de Coca</Spanish>
-            <Russian></Russian>
-            <German>Unverarbeitetes Kokain</German>
-            <French>Feuille de Coca</French>
-            <Italian>Cocaina non processata</Italian>
-            <Portuguese>Cocaína não Refinada</Portuguese>
-            <Polish>Nieoczyszczona kokaina</Polish>
         </Key>
         <Key ID="STR_Item_CocaineP">
             <Original>Coke</Original>
-            <Czech>Koks</Czech>
-            <Spanish>Cocaína</Spanish>
-            <Russian></Russian>
-            <German>Verarbeitetes Kokain</German>
-            <French>Cocaine</French>
-            <Italian>Cocaina processata</Italian>
-            <Portuguese>Cocaína Refinada</Portuguese>
-            <Polish>Oczyszczona kokaina</Polish>
         </Key>
         <Key ID="STR_Item_SpikeStrip">
             <Original>Spike Strip</Original>
-            <Czech>Spike Strip</Czech>
-            <Spanish>Barrera de Clavos</Spanish>
-            <Russian></Russian>
-            <German>Nagelband</German>
-            <French>Herse</French>
-            <Italian>Striscia Chiodata</Italian>
-            <Portuguese>Tapete de Espinhos</Portuguese>
-            <Polish>Kolczatka drogowa</Polish>
         </Key>
+		<Key ID="STR_Item_ZipTies">
+			<Original>ZipTies</Original>
+		</Key>
     </Package>
     <Package name="Life_License">
         <Key ID="STR_License_Driver">
@@ -4322,36 +4285,12 @@
     <Package name="Session_Strings">
         <Key ID="STR_Session_Query">
             <Original>Sending request to server for player information UID [%1]</Original>
-            <Czech>Odesílání požadavku na server pro informační hráč UID [%1]</Czech>
-            <Spanish>Pidiendo informacion del UID de [%1] del server</Spanish>
-            <Russian></Russian>
-            <German>Frage Spieler Informationen zu UID [%1] ab</German>
-            <French>Envoi de la requête au serveur pour obtenir des informations lecteur UID [%1]</French>
-            <Italian>Invio richiesta al server per le informazioni del giocatore UID [%1]</Italian>
-            <Portuguese>Obtendo informações do UID [%1] no servidor</Portuguese>
-            <Polish>Wysyłam żądanie do serwera po informację o fraczu UID [%1]</Polish>
         </Key>
         <Key ID="STR_Session_QueryFail">
             <Original>The server didn't find any player information matching your UID, attempting to add player to system.</Original>
-            <Czech>Server nenašel žádné informace hráče nalezen.Chcete UID, pokusu o přidání hráče do systému.</Czech>
-            <Spanish>No se encontro ninguna información con tu UID, se esta creando un nuevo jugador.</Spanish>
-            <Russian></Russian>
-            <German>Der Server hat keine Spieler Informationen zu deiner UID gefunden, versuche, Spieler ins System hinzuzufügen.</German>
-            <French>Le serveur n'a pas trouvé toutes les informations de lecteur correspondant à votre UID, tentative d'ajout du joueur dans le système.</French>
-            <Italian>Il server non ha trovato alcuna informazione sul giocatore con il tuo UID, tentativo di aggiunta del giocatore al sistema.</Italian>
-            <Portuguese>O servidor não encontrou nenhuma informação correspondente ao seu UID, tentando adicionar jogador ao sistema.</Portuguese>
-            <Polish>Serwer nie odnalazł informacji zgodnych z UID, dodaję gracza do bazy danych.</Polish>
         </Key>
         <Key ID="STR_Session_Error">
             <Original>There was an error in trying to setup your client.</Original>
-            <Czech>Došlo k chybě při pokusu o nastavení vašeho klienta.</Czech>
-            <Spanish>Hubo un error en tratando de preparar tu cliente.</Spanish>
-            <Russian></Russian>
-            <German>Es gab einen Fehler beim Versuch, deinen Client einzurichten.</German>
-            <French>Il y avait une erreur en essayant de configurer votre client.</French>
-            <Italian>C'è stato qualche errore nel cercare di inizializzare il tuo client</Italian>
-            <Portuguese>Ocorreu um erro ao tentar configurar o seu cliente.</Portuguese>
-            <Polish>Wystąpił błąd w trakcie ustawiania klienta</Polish>
         </Key>
         <Key ID="STR_Session_Received">
             <Original>Received request from server... Validating...</Original>
