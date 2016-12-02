@@ -10,7 +10,7 @@
     // Add a line in this array to add a message
     _messages = [
         "Please Visit our teamspeak if you have any issues or just want a chat:<br/> <t color='#e32828' size='1'>thegamerssociety.streamlinegames.com</t>",
-        "Visit our forums for server rules and anymore information<br/><t color='#e32828' size='1.5'>TBA</t>"
+        "Visit our forums for server rules and anymore information<br/><t color='#e32828' size='1.5'>TheGamersSociety.Net</t>"
     ];
 
     _refreshTime = 1800; // Time between each message (in seconds)

@@ -26,7 +26,8 @@ _kassa = 2500000 + round(random 900000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
-if(_chance >= 1) then {[1,format["<t size='1.5'><t color='#504DF2'>CRIME STOPPERS</t></t><br/><br/><t size='1'>Authorities have confirmed that the Westpac Bank is currently being robbed. This is considered an act of terrorism and any person found near the bank will be considered hostile and lethal force may be used to subdue the attackers!<br/><br/>Stay safe everyone!</t>"]] remoteExec ["life_fnc_broadcast",civilian]; };
+if(_chance >= 1) then {[1,format["Alert The Kavala Bank is being robbed: All personal muust respond"]] remoteExec ["life_fnc_broadcast",west]; };
+if(_chance >= 1) then {[1,format["Alert: The kavala bank is being robbed please keep away as this is a active shooter situation.:Alert"]] remoteExec ["life_fnc_broadcast",civilian]; };
 [_shop, "robberyalarm",250] RemoteExec [ "life_fnc_say3D",0];
 
 _cops = (west countSide playableUnits);
