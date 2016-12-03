@@ -31,7 +31,7 @@ if(_chance >= 1) then {[1,format["Alert: The kavala bank is being robbed please 
 [_shop, "robberyalarm",250] RemoteExec [ "life_fnc_say3D",0];
 
 _cops = (west countSide playableUnits);
-if(_cops < -1) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob the bank!";};
+if(_cops < 6) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob the bank!";};
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";

@@ -25,51 +25,13 @@ TEXT HERE<br/><br/>
 
     player createDiaryRecord ["credits",
         [
-            "AsYetUntitled",
+            "Framework",
                 "
 AsYetUntitled (formerly ArmaLife) is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
                 "
         ]
     ];
 
-    player createDiaryRecord ["changelog",
-        [
-            "Altis Life Changelog",
-                "
-The full changelog can be found on the AsYetUntitled/Framework repository on GitHub. https://github.com/AsYetUntitled/Framework/<br/><br/>
-v4.4 release 3!<br/>
-By: danielstuart14<br/>
-Date: 31. May 2016<br/><br/>
-v4.4 release 2!<br/>
-By: danielstuart14<br/>
-Date: 20. March 2016<br/><br/>
-v4.4 release 1!<br/>
-By: danielstuart14<br/>
-Date: 12. February 2016<br/><br/>
-v4.3 release 4!<br/>
-By: danielstuart14<br/>
-Date: 31. January 2016<br/><br/>
-v4.3 release 3!<br/>
-By: danielstuart14<br/>
-Date: Not released<br/><br/>
-v4.3 release 2!<br/>
-By: danielstuart14<br/>
-Date: 22. January 2016<br/><br/>
-v4.3 release 1!<br/>
-By: danielstuart14<br/>
-Date: 19. January 2016<br/><br/>
-                "
-        ]
-    ];
-
-    player createDiaryRecord ["changelog",
-        [
-            "Server Change Log",
-                "
-This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.<br/><br/>
-                "
-        ]
-    ];
 
         player createDiaryRecord ["serverrules",
         [
@@ -85,15 +47,14 @@ These are considered exploits, and you will not be kicked, but banned.<br/><br/>
         ]
     ];
 
-    player createDiaryRecord ["safezones",
+    player createDiaryRecord ["serverrules",
         [
             "Safe Zones",
                 "
 If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
-Any vehicle spawn (shop or garage)<br/>
-Any weapon shop<br/>
-All Police HQs<br/>
-Rebel Outposts<br/><br/>
+-Green Safezones are civillian safezones and are subject to civilian safezone rules extend 50m of the edge of the safezone.<br/>
+-Blue Safezones are Police Safezones and are subjest to police SZ rules- Police SZ rules extend 50m from the edge of the safezone marker.<br/>
+-Rebel Safezones are Safezones that sorround the rebel outposts and extent 150m from the edge of the SZ marker.<br/>
                 "
         ]
     ];
@@ -243,7 +204,6 @@ Crisis Negotiation must be handled by a Sergeant. If one is not available, the p
 6. Police may not fire blindly into the building.<br/>
 7. The police should evacuate the civilians from the building during a robbery.<br/>
 8. Any civilian who actively makes an attempt to block the police from entering the building may be treated as an accomplice.<br/>
-9. Supervisory officers may hire individuals or contract a group of people to work as security guards for the bank. See 'Contracting' section for more information.<br/><br/>
                 "
         ]
     ];
@@ -289,28 +249,6 @@ Small towns: An appropriate location may be chosen. This is to be judged by offi
         ]
     ];
 
-    player createDiaryRecord ["policerules",
-        [
-            "Checkpoints",
-                "
-Cops are encouraged to setup checkpoints in strategic areas to help combat illegal activity and promote safety on the road.<br/><br/>
-1. A checkpoint must consist of 3 or more officers, utilizing 2 or more vehicles. An ATV does not count as one of the required vehicles, but may still be used.<br/>
-2. A checkpoint can not be setup within 300m of an illegal area. Basically, you cannot set one up on top of an illegal area.<br/>
-3. Checkpoints may only be setup on roads, but it does not have to be on a crossroad.<br/>
-4. Checkpoints do not have to be marked on the map.<br/><br/>
-Proper Checkpoint Procedure:<br/>
-1. Have the driver stop the vehicle at a safe distance and turn off the engine.<br/>
-2. Ask the driver and any passengers if they have any weapons.<br/>
-3. Ask the driver and any passengers to exit the vehicle. If they have weapons, do not immediately restrain them when they get out, tell them to lower their weapons and given them a reasonable amount of time to do so.<br/>
-4. Ask them where they are headed to and from.<br/>
-5. Ask if they will submit to a search.<br/>
-6. If they allow a search, you may restrain them and search them.<br/>
-7. If they do not submit to a search, you must let them go, unless there is probable cause.<br/>
-8. After the search is done, you may allow them to re-enter their vehicle and drive away.<br/>
-9. In case anything illegal is found, the person may be ticketed or arrested depending on the crime.<br/><br/>
-                "
-        ]
-    ];
 
     player createDiaryRecord ["policerules",
         [
@@ -514,15 +452,8 @@ A civilian in control of the following prohibited vehicles is subject to the con
             "Illegal Weapons",
                 "
 A civilian in possession of the following is subject to the consequences as defined in the illegal possession of a firearm law.<br/><br/>
-1. MX Series<br/>
-2. Katiba Series<br/>
-3. TRG Series<br/>
-4. Mk.20 Series<br/>
-5. Mk.18 ABR<br/>
-6. SDAR Rifle<br/>
-7. Sting SMG<br/>
-8. Silenced P07 (Taser)<br/>
-9. Any explosives<br/><br/>
+1.All police weapons.
+2.Any weapons not bought in the weapons store.
                 "
         ]
     ];
@@ -559,7 +490,9 @@ Left Shift + R: Restrain (police only).<br/><br/>
             "Civilian controls",
                 "
 Left Shift + G: Knock out / stun (Weapon required. Used for robbing).<br/>
+Left Shift + B to restrain someine with zipties.<br/>
 Spacebar: Place storage container.<br/><br/>
+
                 "
         ]
     ];
@@ -570,12 +503,12 @@ Spacebar: Place storage container.<br/><br/>
 Y: Open Player Menu.<br/>
 U: Lock and unlock vehicles and houses.<br/>
 T: Vehicle trunk and house virtual item storage.<br/>
-Left Shift + B: Surrender (hands on head).<br/>
+Tab: Surrender (hands on head).<br/>
 Left Windows: Main interaction key. Used for interacting with objects like vehicles, houses, ATMs, and restrained players. Can be rebound to a single key like H by pressing ESC->Configure->Controls->Custom->Use Action 10.<br/>
 Left Shift + H: Holsters the weapon in your hands.<br/>
 Left Ctrl + H: Revert holster action.<br/>
 Shift + Spacebar: Jump.<br/>
-Left Shift + O: (un)fade sound (ear plugs).<br/><br/>
+End: (un)fade sound (ear plugs).<br/><br/>
                 "
         ]
     ];
