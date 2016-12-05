@@ -528,7 +528,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
             { "Black Patrol", "cop", {
-                "textures\cop\cop_suv1.paa"
+                "textures\cop\cop_suv1.jpg"
             }, "" }
         };
     };
@@ -566,9 +566,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "";
         price = 30000;
         textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            { "Cop", "cop", {
+                "textures\cop\hunter_front.jpg",
+                "textures\cop\hunter_back.jpg"
             }, "" }
         };
     };
