@@ -6518,15 +6518,7 @@
 
         </Key>
         <Key ID="STR_Crime_10">
-            <Original>Grand Theft (Military Vehicle)</Original>
-            <Czech>Grand Theft (Military Vehicle)</Czech>
-            <Spanish>Robo Mayor (Vehículo Militar)</Spanish>
-            <Russian></Russian>
-            <French>Vol de véhicule militaire</French>
-            <Portuguese>Roubo de Veículo(Militar)</Portuguese>
-            <German>Schwerer Diebstahl (Dienstfahrzeug)</German>
-            <Italian>Furto di veicolo militare</Italian>
-            <Polish>Grand Theft (pojazd wojskowy)</Polish>
+            <Original>Grand Theft (Police Vehicle)</Original>
         </Key>
         <Key ID="STR_Crime_11">
             <Original>Armored Vehicle</Original>
@@ -6563,14 +6555,6 @@
         </Key>
         <Key ID="STR_Crime_14">
             <Original>Open carry in city (Legal Weapon)</Original>
-            <Czech>open carry ve městě (právní Weapon)</Czech>
-            <Spanish>Cargar Arma Abiertamente en la Ciudad (Arma Legal)</Spanish>
-            <Italian>Aprire il trasporto in città (Arma Legale)</Italian>
-            <Polish>Otwarty Carry w mieście (prawny Weapon)</Polish>
-            <Russian></Russian>
-            <French>Arme légale visible en ville</French>
-            <Portuguese>Portar em Cidades(Arma Legal)</Portuguese>
-            <German>Offenes tragen einer legalen Waffe in der Stadt</German>
         </Key>
         <Key ID="STR_Crime_15">
             <Original>Rebel weapon</Original>
@@ -6639,15 +6623,7 @@
             <Polish>Obrażanie cywilem</Polish>
         </Key>
         <Key ID="STR_Crime_21">
-            <Original>Insulting a soldier</Original>
-            <Czech>Urážky vojáka</Czech>
-            <Spanish>Insultar a un Soldado</Spanish>
-            <Russian></Russian>
-            <French>Insulte envers un militaire</French>
-            <Portuguese>Insulto as Autoridades</Portuguese>
-            <German>Beamtenbeleidigung</German>
-            <Italian>Insulto a pubblico ufficiale</Italian>
-            <Polish>Znieważenie żołnierza</Polish>
+            <Original>Insulting a Officer</Original>
         </Key>
         <Key ID="STR_Crime_22">
             <Original>Drug dealing</Original>
@@ -6661,15 +6637,7 @@
             <Polish>Handel narkotykami</Polish>
         </Key>
         <Key ID="STR_Crime_23">
-            <Original>Federal Reserve breaking</Original>
-            <Czech>Federální rezervní systém lámání</Czech>
-            <Spanish>Entrar a la Reserva Federal</Spanish>
-            <Russian></Russian>
-            <French>Intrusion dans le coffre du gouverneur</French>
-            <Portuguese>Invasão a Reserva Federal</Portuguese>
-            <German>Bankeinbruch</German>
-            <Italian>Rapina alla Riserva Federale</Italian>
-            <Polish>Rezerwa Federalna łamanie</Polish>
+            <Original>Bank Robbery</Original>
         </Key>
         <Key ID="STR_Crime_24">
             <Original>Killing of a civilian</Original>
@@ -6683,7 +6651,7 @@
             <German>Das Töten eines Zivilen</German>
         </Key>
         <Key ID="STR_Crime_25">
-            <Original>Killing of a soldier</Original>
+            <Original>Killing of a Officer</Original>
             <Czech>Zabití vojáka</Czech>
             <Spanish>Homicidio de un Soldado</Spanish>
             <Russian></Russian>

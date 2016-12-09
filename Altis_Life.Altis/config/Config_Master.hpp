@@ -18,7 +18,7 @@ class Life_Settings {
 /* Database Related Settings */
     /* Player Data Saving */
     save_virtualItems = true; //Save Virtual items (all sides)?
-    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
+    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit","zipties" }; //Array of virtual items that can be saved on your player.
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
     save_civilian_position = false; //Save civilian location?
@@ -42,13 +42,13 @@ class Life_Settings {
     minimum_cops = 8; //Minimum cops required online to rob the Federal Reserve
 
     /*Death settings*/
-    drop_weapons_onDeath = false; //Set true to enable weapon dropping on death. False (default) will delete player weapons on death, allowing them to be revived with them instead
+    drop_weapons_onDeath = true; //Set true to enable weapon dropping on death. False (default) will delete player weapons on death, allowing them to be revived with them instead
 
     /* Basic System Configurations */
     donor_level = false; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
     enable_fatigue = true; //Set to false to disable the ARMA 3 fatigue system.
     total_maxWeight = 24; //Static variable for the maximum weight allowed without having a backpack
-    respawn_timer = 30; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
+    respawn_timer = 60; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
     /* Channel 7 News Station Configurations */
     news_broadcast_cost = 150000; //Cost for a player to send a news station broadcast.
@@ -160,50 +160,50 @@ class Life_Settings {
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */
     crimes[] = {
-        {"STR_Crime_187V","650","187V"},
-        {"STR_Crime_187","2000","187"},
-        {"STR_Crime_901","450","901"},
-        {"STR_Crime_215","200","215"},
-        {"STR_Crime_213","1000","213"},
-        {"STR_Crime_211","100","211"},
-        {"STR_Crime_207","350","207"},
-        {"STR_Crime_207A","200","207A"},
-        {"STR_Crime_390","1500","390"},
-        {"STR_Crime_487","150","487"},
-        {"STR_Crime_488","70","488"},
-        {"STR_Crime_480","100","480"},
-        {"STR_Crime_481","100","481"},
-        {"STR_Crime_482","500","482"},
-        {"STR_Crime_483","950","483"},
-        {"STR_Crime_459","650","459"},
-        {"STR_Crime_666","200","666"},
-        {"STR_Crime_667","4500","667"},
-        {"STR_Crime_668","1500","668"},
-        {"STR_Crime_1","250","1"},
-        {"STR_Crime_2","200","2"},
-        {"STR_Crime_3","150","3"},
-        {"STR_Crime_4","250","4"},
-        {"STR_Crime_5","100","5"},
-        {"STR_Crime_6","80","6"},
-        {"STR_Crime_7","150","7"},
-        {"STR_Crime_8","5000","8"},
-        {"STR_Crime_9","5000","9"},
-        {"STR_Crime_10","15000","10"},
-        {"STR_Crime_11","10000","11"},
-        {"STR_Crime_12","2500","12"},
-        {"STR_Crime_13","1500","13"},
-        {"STR_Crime_14","500","14"},
-        {"STR_Crime_15","2500","15"},
-        {"STR_Crime_16","1500","16"},
-        {"STR_Crime_17","100","17"},
-        {"STR_Crime_18","1500","18"},
-        {"STR_Crime_19","2500","19"},
-        {"STR_Crime_20","500","20"},
-        {"STR_Crime_21","500","21"},
-        {"STR_Crime_22","2000","22"},
-        {"STR_Crime_23","5000","23"},
-        {"STR_Crime_24","10000","24"},
-        {"STR_Crime_25","20000","25"}
+        {"STR_Crime_187V","70000","187V"},
+        {"STR_Crime_187","70000","187"},
+        {"STR_Crime_901","50000","901"},
+        {"STR_Crime_215","20000","215"},
+        {"STR_Crime_213","50000","213"},
+        {"STR_Crime_211","20000","211"},
+        {"STR_Crime_207","35000","207"},
+        {"STR_Crime_207A","10000","207A"},
+        {"STR_Crime_390","15000","390"},
+        {"STR_Crime_487","20000","487"},
+        {"STR_Crime_488","15000","488"},
+        {"STR_Crime_480","10000","480"},
+        {"STR_Crime_481","30000","481"},
+        {"STR_Crime_482","20000","482"},
+        {"STR_Crime_483","30000","483"},
+        {"STR_Crime_459","20000","459"},
+        {"STR_Crime_666","10000","666"},
+        {"STR_Crime_667","100000","667"},
+        {"STR_Crime_668","40000","668"},
+        {"STR_Crime_1","5000","1"},
+        {"STR_Crime_2","5000","2"},
+        {"STR_Crime_3","5000","3"},
+        {"STR_Crime_4","10000","4"},
+        {"STR_Crime_5","5000","5"},
+        {"STR_Crime_6","200","6"},
+        {"STR_Crime_7","3000","7"},
+        {"STR_Crime_8","150000","8"},
+        {"STR_Crime_9","20000","9"},
+        {"STR_Crime_10","30000","10"},
+        {"STR_Crime_11","150000","11"},
+        {"STR_Crime_12","25000","12"},
+        {"STR_Crime_13","12000","13"},
+        {"STR_Crime_14","25000","14"},
+        {"STR_Crime_15","100000","15"},
+        {"STR_Crime_16","20000","16"},
+        {"STR_Crime_17","15000","17"},
+        {"STR_Crime_18","10000","18"},
+        {"STR_Crime_19","20000","19"},
+        {"STR_Crime_20","1000","20"},
+        {"STR_Crime_21","2000","21"},
+        {"STR_Crime_22","20000","22"},
+        {"STR_Crime_23","350000","23"},
+        {"STR_Crime_24","70000","24"},
+        {"STR_Crime_25","80000","25"}
     };
 };
 
