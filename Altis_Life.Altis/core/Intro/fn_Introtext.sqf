@@ -11,7 +11,7 @@ sleep 2; //Wait in seconds before the credits start after player is in-game
 _role1 = "Welcome to Altis Life";
 _role1names = ["A Framework by Tonic, Modified by the TGS Development Team"];
 _role2 = "Development Team";
-_role2names = ["Larry, Tempo, Stevie, Jared"];
+_role2names = ["Larry, Jared"];
 _role3 = "Please Visit Our Forums:";
 _role3names = ["TheGamersSociety.net"];
 _role4 = "Join Our Teamspeak at";
